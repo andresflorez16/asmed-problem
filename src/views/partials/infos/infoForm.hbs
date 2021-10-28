@@ -1,0 +1,78 @@
+<div class="card card-body p-5 rounded-0">
+  <h3>Registrar usuario</h3>
+  <form action="/info/add" method="post">
+            <div class="mb-3">
+              <input
+                class="form-control"
+                type="text"
+                name="id"
+                placeholder="identificacion"
+                value="{{info.id}}"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+              type="text"
+                class="form-control"
+                name="nombre"
+                rows="3"
+                placeholder="Nombre"
+              >{{info.nombre}}</input>
+            </div>
+            <div class="mb-3">
+              <input
+              type="text"
+                class="form-control"
+                name="tipoDocumento"
+                rows="3"
+                placeholder="Tipo de documento"
+              >{{info.tipoDocumento}}</input>
+            </div>
+            <div class="mb-3">
+              <input
+              type="text"
+                class="form-control"
+                name="fechaNacimiento"
+                rows="3"
+                placeholder="Fecha de nacimiento"
+              >{{info.fechaNacimiento}}</input>
+            </div>
+            <div class="mb-3">
+              <input
+              type="text"
+                class="form-control"
+                name="fechaAfiliacion"
+                rows="3"
+                placeholder="Fecha de afiliación"
+              >{{info.fechaAfiliacion}}</input>
+            </div>
+            <div class="mb-3">
+              <input
+              type="text"
+                class="form-control"
+                name="direccion"
+                rows="3"
+                placeholder="Dirección"
+              >{{info.direccion}}</input>
+            </div>
+            <div class="mb-3">
+              <input
+              type="text"
+                class="form-control"
+                name="telefono"
+                rows="3"
+                placeholder="Telefono"
+              >{{info.telefono}}</input>
+            </div>
+            <div class="mb-3">
+              <input
+              type="text"
+                class="form-control"
+                name="nivelAfiliado"
+                rows="3"
+                placeholder="Nivel de afiliacion"
+              >{{info.nivelAfiliado}}</input>
+            </div>
+            <button class="btn btn-primary" type="submit">Registrar</button>
+          </form>
+</div>

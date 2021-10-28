@@ -1,0 +1,32 @@
+<table class="table table-bordered table-hover table-secondary">
+  <thead>
+    <tr>
+      <th>N°</th>
+      <th>Identificación</th>
+      <th>Nombre</th>
+      <th>Sisben</th>
+      <th>Telefono</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbodyinfo
+    {{#each infos}}
+      <tr>
+        <td>{{@index}}</td>
+        <td><strong>{{id}}</strong></td>
+        <td>{{nombre}}</td>
+        <td>{{nivelAfiliado}}</td>
+        <td>{{telefono}}</td>
+        <td>
+          <a href="/info/{{_id}}/delete" class="btn btn-danger" style="margin-bottom: 5px;">
+            Eliminar
+          </a>
+          <br>
+          <a href="/info/{{_id}}/edit" class="btn btn-info">
+            Modificar
+          </a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
